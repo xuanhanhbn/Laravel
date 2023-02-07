@@ -18,3 +18,8 @@ Route::get('about-us',[App\Http\Controllers\WebController::class,"aboutUs"]);
 
 // category
 Route::get("/admin/product",[\App\Http\Controllers\Admin\ProductController::class,"listAll"]);
+
+Route::get('/register-product', function () {
+    return view('register_product');
+});
+
